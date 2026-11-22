@@ -1,0 +1,19 @@
+bookshelf: legacy 243953, refined core 242353, opaque 240186, partial 4262, removed fringe 770
+books 1: legacy 22708, refined core 22365, opaque 21473, partial 1469, removed fringe 66
+books 2: legacy 26315, refined core 25649, opaque 24691, partial 1785, removed fringe 162
+books 3: legacy 25438, refined core 25054, opaque 24114, partial 1645, removed fringe 114
+books 4: legacy 31890, refined core 31681, opaque 30644, partial 1632, removed fringe 131
+window: legacy 174436, refined core 174436, opaque 171222, partial 1846, removed fringe 1571
+door: legacy 183971, refined core 182758, opaque 180872, partial 3589, removed fringe 402
+desk: legacy 51110, refined core 50555, opaque 48526, partial 4003, removed fringe 37
+monitor: legacy 52589, refined core 51558, opaque 50520, partial 1807, removed fringe 328
+flowers: legacy 12041, refined core 11043, opaque 10318, partial 908, removed fringe 617
+clock left: legacy 13190, refined core 12430, opaque 11876, partial 882, removed fringe 334
+clock right: legacy 13122, refined core 12405, opaque 11850, partial 873, removed fringe 299
+map: legacy 34128, refined core 34128, opaque 33390, partial 742, removed fringe 0
+knife: legacy 1710, refined core 1626, opaque 1346, partial 543, removed fringe 53
+plate: legacy 13410, refined core 13113, opaque 12688, partial 786, removed fringe 60
+fork: legacy 1773, refined core 1717, opaque 1336, partial 653, removed fringe 107
+lamp: legacy 10461, refined core 9439, opaque 7935, partial 2547, removed fringe 685
+bin: legacy 17318, refined core 16451, opaque 15948, partial 985, removed fringe 318
+rug: legacy 98191, refined core 97092, opaque 94990, partial 3138, removed fringe 87

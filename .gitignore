@@ -1,0 +1,26 @@
+# Local output and personal/editor state
+/output/
+/.impeccable/
+.DS_Store
+*.xcuserstate
+*.xcuserdata/
+*.zip
+.env
+.env.*
+
+# The repository ships the current build and the necessary art source data;
+# unrelated historical drafts and personal references remain on this Mac.
+/assets/*
+!/assets/design/
+/assets/design/*
+!/assets/design/v3/
+/assets/design/v3/*
+!/assets/design/v3/room-day-v3-21.png
+!/assets/design/v3/layers-v3-21/
+!/assets/design/v3/layers-v3-22/
+!/assets/design/v3/layers-v3-22-refined/
+/assets/design/v3/layers-v3-21/*
+!/assets/design/v3/layers-v3-21/source-clean-background.png
+!/assets/design/v3/layers-v3-21/source-clean-desk-map.png
+!/assets/design/v3/layers-v3-21/source-empty-bookcase.png
+/assets/design/v3/layers-v3-22/home-sweet-home-v3-22.psd
