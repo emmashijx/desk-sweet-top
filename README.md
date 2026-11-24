@@ -1,32 +1,32 @@
 # Desk Sweet Top
 
-Home Sweet Home 是一个原生 macOS 桌面房间原型。它将一面墙和地板上的手绘家具作为可交互的桌面入口，而不是使用传统的应用图标列表。
+Home Sweet Home is a native macOS desktop prototype. Hand-drawn furniture set against a wall and floor serves as an interactive way to launch apps from your desktop.
 
-![房间效果](assets/design/v3/layers-v3-22-refined/composited-preview.png)
+![Room preview](assets/design/v3/layers-v3-22-refined/composited-preview.png)
 
-## 当前版本
+## Current Version
 
-- 27 个独立图层，全屏无留白，家具保持等比缩放。
-- 房间编辑器：导入或生成背景、添加/移动/调整家具、保存多套布置及切换布局。
-- 显示器：浅雾蓝色选择器，Chrome/Safari，半屏/全屏，优先复用浏览器现有会话。
-- 支持英文、简体中文和繁体中文，跟随 macOS 首选语言。
+- The room is built from 27 separate layers. The scene fills the screen in full-screen mode, and furniture keeps its original proportions.
+- The room editor lets you import or generate backgrounds, add and move furniture, resize it, and save and switch between layouts.
+- The in-room monitor opens a pale, misty blue browser picker. Choose Chrome or Safari and a half-screen or full-screen window. The app reuses existing browser sessions whenever possible.
+- The app follows your preferred macOS language and supports English, Simplified Chinese, and Traditional Chinese.
 
-其余家具尚未接入具体交互功能。
+Furniture other than the monitor is currently decorative.
 
-## 本机运行
+## Run Locally
 
-在安装 Xcode Command Line Tools 的 Mac 上，从仓库根目录执行：
+On a Mac with the Xcode Command Line Tools installed, run these commands from the repository root.
 
 ```sh
 zsh scripts/build-monitor-app.sh
 open output/local-test/HomeSweetHome.app
 ```
 
-首次运行可在编辑器中载入原始布局，保存后进入房间。点击显示器选择窗口模式与浏览器；`⌘E` 编辑布置，`⌃⌘F` 切换房间全屏，`⌘Q` 退出程序。
+On first launch, load the original layout in the room editor and save it to enter the room. Click the monitor to choose a browser and window mode. Use `⌘E` to edit the layout, `⌃⌘F` to toggle full-screen mode, and `⌘Q` to quit.
 
-若需要自动调整浏览器窗口，macOS 可能会请求自动化和辅助功能授权。详情见 [本地测试指南](app/LOCAL-TEST.md)。
+macOS may ask for Automation and Accessibility permissions if the app needs to resize browser windows automatically. See the [local testing guide](app/LOCAL-TEST.md) for details.
 
-## 运行测试
+## Run Tests
 
 ```sh
 output/local-test/HomeSweetHome.app/Contents/MacOS/HomeSweetHome --self-test
@@ -34,6 +34,6 @@ output/local-test/HomeSweetHome.app/Contents/MacOS/HomeSweetHome --capture-test 
 output/local-test/HomeSweetHome.app/Contents/MacOS/HomeSweetHome --type-test output/local-test/monitor-typeset
 ```
 
-测试使用模拟浏览器驱动，不修改真实浏览器会话。房间布局储存在本机，不随仓库上传。OpenSpec 变更记录位于 `openspec/`。
+The tests use a mock browser driver and leave your browser sessions untouched. Room layouts are stored on your Mac. OpenSpec change records are in `openspec/`.
 
-设计资产保留当前可编辑 PSD、透明 PNG 以及必要的原始素材。详见 [透明图层说明](assets/design/v3/layers-v3-22-refined/README.md)。
+The repository includes the current editable PSD, transparent PNGs, and required source assets. See the [transparent layer notes](assets/design/v3/layers-v3-22-refined/README.md) for details.
